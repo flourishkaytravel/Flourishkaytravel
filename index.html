@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FlourishKay Travel & Tour - Visa Assistance, Study Abroad & Holidays</title>
+<meta name="description" content="FlourishKay Travel & Tour: visa assistance, study abroad guidance, holiday packages and flight booking - handled from Lagos and Glasgow.">
+<link rel="icon" href="images/logo.jpeg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="route-progress" id="routeProgress"></div>
+
+<header class="site-header" id="siteHeader">
+  <div class="wrap header-inner">
+    <a href="#top" class="brand">
+      <img src="images/logo.jpeg" alt="FlourishKay Travel & Tour" class="brand-mark-img">
+      <span class="brand-word">FlourishKay<em>Travel &amp; Tour</em></span>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#visa">Visa</a>
+      <a href="#services">Services</a>
+      <a href="#study">Study Abroad</a>
+      <a href="#destinations">Destinations</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="tel:+447908487861" class="btn btn-ghost">+44 7908 487861</a>
+      <button type="button" class="btn btn-primary open-booking">Book a consultation</button>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow mono">VISA &amp; IMMIGRATION SPECIALISTS · LAGOS &amp; GLASGOW</p>
+        <h1>Your next stamp <br>starts as a checklist.</h1>
+        <p class="hero-lead">Visa applications are what we do first and do best - UK, Canada, USA, Schengen, Australia and more. Flights, study placements and holidays are simply what we arrange once your paperwork is right, all handled by advisors who do this every day.</p>
+        <div class="hero-cta">
+          <a href="#visa" class="btn btn-primary btn-lg">Check my visa options</a>
+          <a href="#services" class="btn btn-outline btn-lg">See all services</a>
+        </div>
+        <div class="hero-trust">
+          <div><strong>10+</strong><span>years in operation</span></div>
+          <div><strong>5,000+</strong><span>visa &amp; travel files</span></div>
+          <div><strong>40+</strong><span>destination countries</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="pass">
+          <div class="pass-top">
+            <div class="pass-airline">
+              <img src="images/logo.jpeg" alt="" class="pass-logo">
+              <span>FlourishKay Travel &amp; Tour</span>
+            </div>
+            <span class="pass-class mono">APPLICATION FILE</span>
+          </div>
+
+          <div class="pass-visa">
+            <span class="mono label">VISA CATEGORY</span>
+            <span class="pass-visa-title" id="visaTitle">UK Student Visa</span>
+            <span class="pass-stamp mono">ON&nbsp;TRACK</span>
+          </div>
+
+          <div class="pass-track">
+            <div class="track-step done"><span class="dot"></span><span class="mono">Documents</span></div>
+            <div class="track-step done"><span class="dot"></span><span class="mono">Submitted</span></div>
+            <div class="track-step active"><span class="dot"></span><span class="mono">Review</span></div>
+            <div class="track-step"><span class="dot"></span><span class="mono">Approved</span></div>
+          </div>
+
+          <div class="pass-strip">
+            <div><span class="mono label">DESTINATION</span><span id="destCity">United Kingdom</span></div>
+            <div><span class="mono label">STATUS</span><span class="status">On track</span></div>
+            <div><span class="mono label">ADVISOR</span><span>Assigned</span></div>
+          </div>
+
+          <div class="pass-barcode" aria-hidden="true"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY -->
+  <section class="why">
+    <div class="wrap why-grid">
+      <div class="why-item">
+        <span class="mono num">01</span>
+        <h3>Advisors, not agents</h3>
+        <p>Every file has one named advisor from first call to visa decision - not a call centre queue.</p>
+      </div>
+      <div class="why-item">
+        <span class="mono num">02</span>
+        <h3>Paperwork built to survive scrutiny</h3>
+        <p>Financials, SOPs and cover letters are checked against the exact requirements of the embassy you're applying to.</p>
+      </div>
+      <div class="why-item">
+        <span class="mono num">03</span>
+        <h3>Beyond the visa, if you need it</h3>
+        <p>Flights, hotel, transfer and insurance sit on a single itinerary once your visa is in hand - nothing falls through a gap.</p>
+      </div>
+      <div class="why-item">
+        <span class="mono num">04</span>
+        <h3>Instalments, not one lump sum</h3>
+        <p>Flexible payment plans so a visa or ticket doesn't have to be paid for in a single sitting.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="services">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow mono">SERVICES</p>
+        <h2>Visa first - everything else follows</h2>
+      </div>
+
+      <div class="ticket-grid">
+
+        <article class="ticket ticket-featured">
+          <div class="ticket-main">
+            <span class="mono ticket-code">VISA</span>
+            <h3>Visa Assistance</h3>
+            <p>UK, Canada, USA, Schengen, Australia, Ireland, UAE and more - application, documentation and interview prep. Our core service.</p>
+          </div>
+          <div class="ticket-stub mono">
+            <span>GATE</span>
+            <strong>Consult</strong>
+          </div>
+        </article>
+
+        <article class="ticket">
+          <div class="ticket-main">
+            <span class="mono ticket-code">STDY</span>
+            <h3>Study Abroad</h3>
+            <p>University selection, admission processing, SOP review, blocked-account setup for Germany, and pre-departure briefing.</p>
+          </div>
+          <div class="ticket-stub mono">
+            <span>GATE</span>
+            <strong>Apply</strong>
+          </div>
+        </article>
+
+        <article class="ticket">
+          <div class="ticket-main">
+            <span class="mono ticket-code">CORP</span>
+            <h3>Business Travel</h3>
+            <p>Conference and delegation travel, managed for teams and executives with a single point of contact.</p>
+          </div>
+          <div class="ticket-stub mono">
+            <span>GATE</span>
+            <strong>Enquire</strong>
+          </div>
+        </article>
+
+        <article class="ticket">
+          <div class="ticket-main">
+            <span class="mono ticket-code">HOLS</span>
+            <h3>Holiday Packages</h3>
+            <p>Dubai, Turkey, Maldives, Zanzibar and Cape Town - curated itineraries with hotel and transfers included.</p>
+          </div>
+          <div class="ticket-stub mono">
+            <span>GATE</span>
+            <strong>Browse</strong>
+          </div>
+        </article>
+
+        <article class="ticket">
+          <div class="ticket-main">
+            <span class="mono ticket-code">CONS</span>
+            <h3>Travel Consultation</h3>
+            <p>Not sure which route fits your situation? A paid consult maps out the realistic path before you spend on an application.</p>
+          </div>
+          <div class="ticket-stub mono">
+            <span>GATE</span>
+            <strong>Book</strong>
+          </div>
+        </article>
+
+        <article class="ticket">
+          <div class="ticket-main">
+            <span class="mono ticket-code">FLGT</span>
+            <h3>Flight Booking</h3>
+            <p>Domestic and international fares, booked alongside your visa once travel dates are confirmed.</p>
+          </div>
+          <div class="ticket-stub mono">
+            <span>GATE</span>
+            <strong>Search</strong>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- VISA CHECKER / LEAD FORM -->
+  <section id="visa" class="visa">
+    <div class="wrap visa-grid">
+      <div class="visa-copy">
+        <p class="eyebrow mono">VISA ELIGIBILITY</p>
+        <h2>Get pointed at the right visa category</h2>
+        <p class="hero-lead">Fill this in and we'll tell you which category to build your file around. an advisor will also have your details on file straight away, so there's no repeating yourself later.</p>
+      </div>
+
+      <form class="visa-form" id="visaForm">
+        <div class="form-row">
+          <label>
+            <span class="mono label">FULL NAME *</span>
+            <input type="text" id="vName" required placeholder="Your full name">
+          </label>
+          <label>
+            <span class="mono label">PHONE *</span>
+            <input type="tel" id="vPhone" required placeholder="e.g. 0801 234 5678">
+          </label>
+        </div>
+
+        <label>
+          <span class="mono label">EMAIL *</span>
+          <input type="email" id="vEmail" required placeholder="you@email.com">
+        </label>
+
+        <div class="form-row">
+          <label>
+            <span class="mono label">DESTINATION *</span>
+            <select id="vDest" required>
+              <option value="United Kingdom">United Kingdom</option>
+              <option value="Canada">Canada</option>
+              <option value="United States">United States</option>
+              <option value="Schengen Area">Schengen Area</option>
+              <option value="Australia">Australia</option>
+              <option value="UAE">UAE</option>
+              <option value="Ireland">Ireland</option>
+              <option value="Turkey">Turkey</option>
+              <option value="Maldives">Maldives</option>
+              <option value="South Africa">South Africa</option>
+              <option value="Germany">Germany</option>
+              <option value="Malta">Malta</option>
+            </select>
+          </label>
+
+          <label>
+            <span class="mono label">PURPOSE *</span>
+            <select id="vPurpose" required>
+              <option value="Tourism">Tourism</option>
+              <option value="Study">Study</option>
+              <option value="Work">Work</option>
+              <option value="Business">Business</option>
+              <option value="Family visit">Family visit</option>
+            </select>
+          </label>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg">Get in touch</button>
+
+        <div class="visa-result" id="visaResult" hidden>
+          <span class="mono label">RECOMMENDATION</span>
+          <p id="visaResultText"></p>
+          <button type="button" id="visaToContact" class="btn btn-outline">Discuss this with an advisor</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- DESTINATIONS -->
+  <section id="destinations" class="destinations">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow mono">ROUTES WE FILE MOST</p>
+        <h2>Where our visa files are headed this season</h2>
+        <p class="hero-lead">Tap a country to see what its visa actually requires.</p>
+      </div>
+
+      <div class="route-grid">
+        <button type="button" class="route-card" data-country="United Kingdom">
+          <div class="route-line mono"><span>LOS</span><i></i><span>LON</span></div>
+          <h3>United Kingdom</h3>
+          <p>Study visas, visit visas and the London holiday package.</p>
+          <span class="route-hint mono">VIEW REQUIREMENTS →</span>
+        </button>
+        <button type="button" class="route-card" data-country="Canada">
+          <div class="route-line mono"><span>LOS</span><i></i><span>YYZ</span></div>
+          <h3>Canada</h3>
+          <p>Study permits, express entry guidance and family sponsorship.</p>
+          <span class="route-hint mono">VIEW REQUIREMENTS →</span>
+        </button>
+        <button type="button" class="route-card" data-country="United States">
+          <div class="route-line mono"><span>LOS</span><i></i><span>JFK</span></div>
+          <h3>United States</h3>
+          <p>B1/B2 visit visas, interview prep and documentation review.</p>
+          <span class="route-hint mono">VIEW REQUIREMENTS →</span>
+        </button>
+        <button type="button" class="route-card" data-country="Ireland">
+          <div class="route-line mono"><span>LOS</span><i></i><span>DUB</span></div>
+          <h3>Ireland</h3>
+          <p>Study visas and short-stay visit visas, filed through Abuja.</p>
+          <span class="route-hint mono">VIEW REQUIREMENTS →</span>
+        </button>
+        <button type="button" class="route-card" data-country="Schengen Area">
+          <div class="route-line mono"><span>LOS</span><i></i><span>CDG</span></div>
+          <h3>Schengen Area</h3>
+          <p>France-led Schengen applications covering the wider zone.</p>
+          <span class="route-hint mono">VIEW REQUIREMENTS →</span>
+        </button>
+        <button type="button" class="route-card" data-country="Australia">
+          <div class="route-line mono"><span>LOS</span><i></i><span>SYD</span></div>
+          <h3>Australia</h3>
+          <p>Visitor and student visas, with COE and financial docs handled.</p>
+          <span class="route-hint mono">VIEW REQUIREMENTS →</span>
+        </button>
+        <button type="button" class="route-card" data-country="UAE">
+          <div class="route-line mono"><span>LOS</span><i></i><span>DXB</span></div>
+          <h3>Dubai</h3>
+          <p>Visit visas plus the 7-day luxury escape package.</p>
+          <span class="route-hint mono">VIEW REQUIREMENTS →</span>
+        </button>
+        <button type="button" class="route-card" data-country="Germany">
+          <div class="route-line mono"><span>LOS</span><i></i><span>FRA</span></div>
+          <h3>Germany</h3>
+          <p>Student visas - including blocked-account (Sperrkonto) setup help.</p>
+          <span class="route-hint mono">VIEW REQUIREMENTS →</span>
+        </button>
+        <button type="button" class="route-card" data-country="Malta">
+          <div class="route-line mono"><span>LOS</span><i></i><span>MLA</span></div>
+          <h3>Malta</h3>
+          <p>Study visas and an EU-friendly route for shorter courses.</p>
+          <span class="route-hint mono">VIEW REQUIREMENTS →</span>
+        </button>
+        <button type="button" class="route-card" data-country="Turkey">
+          <div class="route-line mono"><span>LOS</span><i></i><span>IST</span></div>
+          <h3>Turkey</h3>
+          <p>Visa-friendly city breaks and the Bosphorus honeymoon route.</p>
+          <span class="route-hint mono">VIEW REQUIREMENTS →</span>
+        </button>
+        <button type="button" class="route-card" data-country="Maldives">
+          <div class="route-line mono"><span>LOS</span><i></i><span>MLE</span></div>
+          <h3>Maldives</h3>
+          <p>5-day overwater honeymoon package, flights included.</p>
+          <span class="route-hint mono">VIEW REQUIREMENTS →</span>
+        </button>
+        <button type="button" class="route-card" data-country="South Africa">
+          <div class="route-line mono"><span>LOS</span><i></i><span>CPT</span></div>
+          <h3>South Africa</h3>
+          <p>7-day safari and Cape Town coastal combination.</p>
+          <span class="route-hint mono">VIEW REQUIREMENTS →</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- STUDY ABROAD -->
+  <section id="study" class="study">
+    <div class="wrap study-grid">
+      <div>
+        <p class="eyebrow mono">STUDY ABROAD</p>
+        <h2>From offer letter to orientation week</h2>
+        <p class="hero-lead">We sit with you through the parts that usually stall an application: choosing a university that matches your grades and budget, building a statement that sounds like you, and preparing financial documents that hold up to scrutiny.</p>
+        <ul class="checklist">
+          <li>University and course shortlisting</li>
+          <li>Admission processing and offer follow-up</li>
+          <li>Statement of purpose review</li>
+          <li>Student visa application</li>
+          <li>Blocked account (Sperrkonto) setup for Germany</li>
+          <li>Accommodation booking</li>
+          <li>Pre-departure briefing</li>
+        </ul>
+        <a href="study-application.html" class="btn btn-primary">Start my application</a>
+      </div>
+      <div class="study-countries">
+        <div><span class="mono">UK</span>United Kingdom</div>
+        <div><span class="mono">CA</span>Canada</div>
+        <div><span class="mono">IE</span>Ireland</div>
+        <div><span class="mono">AU</span>Australia</div>
+        <div><span class="mono">DE</span>Germany</div>
+        <div><span class="mono">MT</span>Malta</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow mono">FROM CLOSED FILES</p>
+        <h2>What clients say once they've landed</h2>
+      </div>
+      <div class="testi-grid">
+        <blockquote>
+          <p>"My UK study visa was handled without a single document sent back for correction. That alone was worth it."</p>
+          <cite> Chidinma O., Student visa, UK</cite>
+        </blockquote>
+        <blockquote>
+          <p>"They booked flights, hotel and a transfer as one itinerary once my visa was approved. I didn't have to think about a single leg of the trip."</p>
+          <cite> Tunde A., Holiday package, Dubai</cite>
+        </blockquote>
+        <blockquote>
+          <p>"Honest advice upfront - they told me my file wasn't ready yet instead of just taking the fee."</p>
+          <cite> Grace E., Visit visa, Canada</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-band">
+    <div class="wrap cta-band-inner">
+      <h2>Ready to get your visa file started?</h2>
+      <p>Book a consultation and leave with a checklist, not just a conversation.</p>
+      <button type="button" class="btn btn-gold btn-lg open-booking">Book a consultation</button>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="wrap contact-grid">
+      <div class="contact-info">
+        <p class="eyebrow mono">CONTACT</p>
+        <h2>Send us your details</h2>
+        <p class="hero-lead">Prefer to talk? Book a call above, or reach either office directly.</p>
+
+        <div class="contact-details">
+          <div>
+            <span class="mono label">UK OFFICE · GLASGOW</span>
+            <a href="tel:+447908487861">+44 7908 487861</a>
+          </div>
+          <div>
+            <span class="mono label">NIGERIA OFFICE · LAGOS</span>
+            <a href="tel:+2341234568">+234 1 234 5678</a>
+          </div>
+          <div>
+            <span class="mono label">EMAIL</span>
+            <a href="mailto:hello@flourishkaytravel.com">hello@flourishkaytravel.com</a>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <label>
+            <span class="mono label">FULL NAME</span>
+            <input type="text" id="cName" required placeholder="Your full name">
+          </label>
+          <label>
+            <span class="mono label">PHONE</span>
+            <input type="tel" id="cPhone" required placeholder="e.g. 0801 234 5678">
+          </label>
+        </div>
+
+        <label>
+          <span class="mono label">EMAIL</span>
+          <input type="email" id="cEmail" required placeholder="you@email.com">
+        </label>
+
+        <div class="form-row">
+          <label>
+            <span class="mono label">DESTINATION</span>
+            <select id="cDest">
+              <option value="United Kingdom">United Kingdom</option>
+              <option value="Canada">Canada</option>
+              <option value="United States">United States</option>
+              <option value="Schengen Area">Schengen Area</option>
+              <option value="Australia">Australia</option>
+              <option value="UAE">UAE</option>
+              <option value="Ireland">Ireland</option>
+              <option value="Turkey">Turkey</option>
+              <option value="Maldives">Maldives</option>
+              <option value="South Africa">South Africa</option>
+              <option value="Germany">Germany</option>
+              <option value="Malta">Malta</option>
+            </select>
+          </label>
+          <label>
+            <span class="mono label">PURPOSE</span>
+            <select id="cPurpose">
+              <option value="Tourism">Tourism</option>
+              <option value="Study">Study</option>
+              <option value="Work">Work</option>
+              <option value="Business">Business</option>
+              <option value="Family visit">Family visit</option>
+            </select>
+          </label>
+        </div>
+
+        <label>
+          <span class="mono label">MESSAGE</span>
+          <textarea id="cMessage" rows="4" placeholder="Tell us a bit about your plans..."></textarea>
+        </label>
+
+        <button type="submit" class="btn btn-primary btn-lg">Send to an advisor</button>
+
+        <p class="contact-confirm" id="contactConfirm" hidden>Your email app should now be open with everything filled in hit send and an advisor will reply directly.</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <img src="images/logo.jpeg" alt="FlourishKay Travel & Tour" class="footer-brand-img">
+      <p>FlourishKay Travel &amp; Tour<br>Visa · Study Abroad · Holidays · Flights</p>
+      <p class="mono small">Glasgow, United Kingdom</p>
+      <p class="mono small">Lagos, Nigeria</p>
+    </div>
+
+    <div>
+      <h4>Company</h4>
+      <a href="#visa">Visa Assistance</a>
+      <a href="#services">Services</a>
+      <a href="#study">Study Abroad</a>
+      <a href="#destinations">Destinations</a>
+    </div>
+
+    <div>
+      <h4>Reach us</h4>
+      <a href="tel:+447908487861">UK: +44 7908 487861</a>
+      <a href="tel:+2341234568">NG: +234 1 234 5678</a>
+      <a href="mailto:hello@flourishkaytravel.com">hello@flourishkaytravel.com</a>
+      <a href="https://wa.me/447908487861" target="_blank" rel="noopener">WhatsApp us</a>
+    </div>
+
+    <div>
+      <h4>Legal</h4>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms &amp; Conditions</a>
+    </div>
+  </div>
+  <div class="wrap footer-bottom mono small">
+    <span>© <span id="year"></span> FlourishKay Travel &amp; Tour. All rights reserved.</span>
+  </div>
+</footer>
+
+<a href="https://wa.me/447908487861" target="_blank" rel="noopener" class="whatsapp-fab" aria-label="Chat on WhatsApp">☎</a>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modalOverlay" hidden>
+  <div class="modal-box" id="modalBox" role="dialog" aria-modal="true">
+    <button type="button" class="modal-close" id="modalClose" aria-label="Close">&times;</button>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Study Abroad Application — FlourishKay Travel & Tour</title>
+<meta name="description" content="Start your study abroad application with FlourishKay Travel & Tour a detailed form covering your background, target course and financial plan.">
+<link rel="icon" href="images/logo.jpeg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="route-progress" id="routeProgress"></div>
+
+<header class="site-header" id="siteHeader">
+  <div class="wrap header-inner">
+    <a href="index.html" class="brand">
+      <img src="images/logo.jpeg" alt="FlourishKay Travel & Tour" class="brand-mark-img">
+      <span class="brand-word">FlourishKay<em>Travel &amp; Tour</em></span>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html#visa">Visa</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#study">Study Abroad</a>
+      <a href="index.html#destinations">Destinations</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a href="tel:+447908487861" class="btn btn-ghost">+44 7908 487861</a>
+      <a href="index.html#contact" class="btn btn-primary">Book a consultation</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="app-hero">
+    <div class="wrap">
+      <a href="index.html#study" class="back-link mono">← Back to Study Abroad</a>   
+      <a></a>
+      <p></p>
+      <p class="eyebrow mono">STUDY ABROAD APPLICATION</p>
+      <h1>Tell us everything <br>we'll take it from here</h1>
+      <p class="hero-lead">The more detail you give us now, the fewer back-and-forth emails later. This goes straight to a study abroad advisor, who'll follow up with your next steps.</p>
+    </div>
+  </section>
+
+  <section class="app-form-section">
+    <div class="wrap">
+      <form class="app-form" id="appForm">
+
+        <fieldset>
+          <legend>Personal Information</legend>
+          <div class="field-grid">
+            <label>
+              <span class="mono label">FULL NAME *</span>
+              <input type="text" id="aName" required placeholder="As it appears on your passport">
+            </label>
+            <label>
+              <span class="mono label">DATE OF BIRTH *</span>
+              <input type="date" id="aDob" required>
+            </label>
+          </div>
+          <div class="field-grid-3">
+            <label>
+              <span class="mono label">GENDER</span>
+              <select id="aGender">
+                <option value="Prefer not to say">Prefer not to say</option>
+                <option value="Female">Female</option>
+                <option value="Male">Male</option>
+              </select>
+            </label>
+            <label>
+              <span class="mono label">NATIONALITY *</span>
+              <input type="text" id="aNationality" required value="Nigerian">
+            </label>
+            <label>
+              <span class="mono label">PASSPORT NUMBER</span>
+              <input type="text" id="aPassport" placeholder="If already issued">
+            </label>
+          </div>
+          <div class="field-grid">
+            <label>
+              <span class="mono label">PHONE *</span>
+              <input type="tel" id="aPhone" required placeholder="e.g. 0801 234 5678">
+            </label>
+            <label>
+              <span class="mono label">EMAIL *</span>
+              <input type="email" id="aEmail" required placeholder="you@email.com">
+            </label>
+          </div>
+          <label>
+            <span class="mono label">HOME ADDRESS</span>
+            <textarea id="aAddress" rows="2" placeholder="Street, city, state"></textarea>
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Academic Background</legend>
+          <div class="field-grid">
+            <label>
+              <span class="mono label">HIGHEST QUALIFICATION *</span>
+              <select id="aQualification" required>
+                <option value="SSCE / WAEC">SSCE / WAEC</option>
+                <option value="OND">OND</option>
+                <option value="HND">HND</option>
+                <option value="Bachelor's degree">Bachelor's degree</option>
+                <option value="Master's degree">Master's degree</option>
+                <option value="PhD">PhD</option>
+              </select>
+            </label>
+            <label>
+              <span class="mono label">INSTITUTION ATTENDED *</span>
+              <input type="text" id="aInstitution" required>
+            </label>
+          </div>
+          <div class="field-grid-3">
+            <label>
+              <span class="mono label">COURSE / FIELD OF STUDY</span>
+              <input type="text" id="aCourse">
+            </label>
+            <label>
+              <span class="mono label">GRADE / CLASS / GPA</span>
+              <input type="text" id="aGrade">
+            </label>
+            <label>
+              <span class="mono label">YEAR OF GRADUATION</span>
+              <input type="text" id="aGradYear" placeholder="e.g. 2023">
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Study Plans</legend>
+          <div class="field-grid">
+            <label>
+              <span class="mono label">INTENDED DESTINATION *</span>
+              <select id="aDest" required>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="Canada">Canada</option>
+                <option value="Ireland">Ireland</option>
+                <option value="Australia">Australia</option>
+                <option value="Germany">Germany</option>
+                <option value="Malta">Malta</option>
+                <option value="Other">Other</option>
+              </select>
+            </label>
+            <label>
+              <span class="mono label">STUDY LEVEL *</span>
+              <select id="aLevel" required>
+                <option value="Foundation">Foundation</option>
+                <option value="Undergraduate">Undergraduate</option>
+                <option value="Postgraduate (Master's)">Postgraduate (Master's)</option>
+                <option value="PhD">PhD</option>
+                <option value="Language course">Language course</option>
+              </select>
+            </label>
+          </div>
+          <div class="field-grid">
+            <label>
+              <span class="mono label">PREFERRED UNIVERSITY</span>
+              <input type="text" id="aUniversity" placeholder="Leave blank if undecided">
+            </label>
+            <label>
+              <span class="mono label">INTENDED COURSE / PROGRAMME</span>
+              <input type="text" id="aProgramme">
+            </label>
+          </div>
+          <div class="field-grid">
+            <label>
+              <span class="mono label">INTENDED INTAKE</span>
+              <input type="text" id="aIntake" placeholder="e.g. September 2027">
+            </label>
+            <label>
+              <span class="mono label">DO YOU HAVE AN ADMISSION OFFER?</span>
+              <select id="aOffer">
+                <option value="No, not yet applied">No, not yet applied</option>
+                <option value="Applied, awaiting decision">Applied, awaiting decision</option>
+                <option value="Yes, conditional offer">Yes, conditional offer</option>
+                <option value="Yes, unconditional offer">Yes, unconditional offer</option>
+              </select>
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>English Proficiency</legend>
+          <div class="field-grid">
+            <label>
+              <span class="mono label">TEST TAKEN</span>
+              <select id="aTest">
+                <option value="Not yet taken">Not yet taken</option>
+                <option value="IELTS">IELTS</option>
+                <option value="TOEFL">TOEFL</option>
+                <option value="PTE Academic">PTE Academic</option>
+                <option value="Duolingo English Test">Duolingo English Test</option>
+              </select>
+            </label>
+            <label>
+              <span class="mono label">SCORE (IF TAKEN)</span>
+              <input type="text" id="aTestScore" placeholder="e.g. 6.5 overall">
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Financial Information</legend>
+          <div class="field-grid">
+            <label>
+              <span class="mono label">FUNDING SOURCE *</span>
+              <select id="aFunding" required>
+                <option value="Self-funded">Self-funded</option>
+                <option value="Family / sponsor">Family / sponsor</option>
+                <option value="Scholarship">Scholarship</option>
+                <option value="Student loan">Student loan</option>
+              </select>
+            </label>
+            <label>
+              <span class="mono label">ESTIMATED BUDGET AVAILABLE</span>
+              <input type="text" id="aBudget" placeholder="e.g. ₦15,000,000 for year one">
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Additional Information</legend>
+          <div class="field-grid">
+            <label>
+              <span class="mono label">ANY PREVIOUS VISA REFUSALS?</span>
+              <select id="aRefusal">
+                <option value="No">No</option>
+                <option value="Yes">Yes</option>
+              </select>
+            </label>
+            <label>
+              <span class="mono label">TRAVELLING WITH DEPENDENTS?</span>
+              <select id="aDependents">
+                <option value="No">No</option>
+                <option value="Yes">Yes</option>
+              </select>
+            </label>
+          </div>
+          <label>
+            <span class="mono label">ANYTHING ELSE WE SHOULD KNOW</span>
+            <textarea id="aNotes" rows="4" placeholder="Refusal details, dependents' ages, specific concerns, questions for your advisor..."></textarea>
+          </label>
+        </fieldset>
+
+        <button type="submit" class="btn btn-primary btn-lg">Submit application enquiry</button>
+        <p class="contact-confirm" id="appConfirm" hidden>Your email app should now be open with your full application pre-filled — hit send and a study abroad advisor will follow up within one business day.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <img src="images/logo.jpeg" alt="FlourishKay Travel & Tour" class="footer-brand-img">
+      <p>FlourishKay Travel &amp; Tour<br>Visa · Study Abroad · Holidays · Flights</p>
+      <p class="mono small">· Glasgow, United Kingdom</p>
+      <p class="mono small">· Lagos, Nigeria</p>
+    </div>
+    <div>
+      <h4>Company</h4>
+      <a href="index.html#visa">Visa Assistance</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#study">Study Abroad</a>
+      <a href="index.html#destinations">Destinations</a>
+    </div>
+    <div>
+      <h4>Reach us</h4>
+      <a href="tel:+447908487861">UK: +44 7908 487861</a>
+      <a href="tel:+2341234568">NG: +234 1 234 5678</a>
+      <a href="mailto:hello@flourishkaytravel.com">hello@flourishkaytravel.com</a>
+      <a href="https://wa.me/447908487861" target="_blank" rel="noopener">WhatsApp us</a>
+    </div>
+    <div>
+      <h4>Legal</h4>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms &amp; Conditions</a>
+    </div>
+  </div>
+  <div class="wrap footer-bottom mono small">
+    <span>© <span id="year"></span> FlourishKay Travel &amp; Tour. All rights reserved.</span>
+  </div>
+</footer>
+
+<a href="https://wa.me/447908487861" target="_blank" rel="noopener" class="whatsapp-fab" aria-label="Chat on WhatsApp">☎</a>
+
+<script src="script.js"></script>
+<script>
+document.getElementById('appForm')?.addEventListener('submit', function (e) {
+  e.preventDefault();
+  const val = id => document.getElementById(id)?.value || '';
+  const subject = `Study Abroad Application — ${val('aName')}`;
+  const body =
+`PERSONAL INFORMATION
+Full name: ${val('aName')}
+Date of birth: ${val('aDob')}
+Gender: ${val('aGender')}
+Nationality: ${val('aNationality')}
+Passport number: ${val('aPassport')}
+Phone: ${val('aPhone')}
+Email: ${val('aEmail')}
+Address: ${val('aAddress')}
+
+ACADEMIC BACKGROUND
+Highest qualification: ${val('aQualification')}
+Institution: ${val('aInstitution')}
+Course / field of study: ${val('aCourse')}
+Grade / class / GPA: ${val('aGrade')}
+Year of graduation: ${val('aGradYear')}
+
+STUDY PLANS
+Intended destination: ${val('aDest')}
+Study level: ${val('aLevel')}
+Preferred university: ${val('aUniversity')}
+Intended programme: ${val('aProgramme')}
+Intended intake: ${val('aIntake')}
+Admission offer status: ${val('aOffer')}
+
+ENGLISH PROFICIENCY
+Test taken: ${val('aTest')}
+Score: ${val('aTestScore')}
+
+FINANCIAL INFORMATION
+Funding source: ${val('aFunding')}
+Estimated budget available: ${val('aBudget')}
+
+ADDITIONAL INFORMATION
+Previous visa refusals: ${val('aRefusal')}
+Travelling with dependents: ${val('aDependents')}
+Notes: ${val('aNotes')}`;
+
+  window.location.href =
+    `mailto:hello@flourishkaytravel.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+  document.getElementById('appConfirm').hidden = false;
+});
+</script>
+</body>
+</html>
