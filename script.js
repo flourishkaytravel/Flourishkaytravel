@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
       <p class="modal-note">Your recommendation has been noted. Call, WhatsApp or email an advisor now or use the contact form further down and we'll call you.</p>
       <div class="modal-advisor-contact">
         <a href="tel:+447908487861" class="btn btn-outline">Call UK - +44 7908 487861</a>
-        <a href="tel:+2341234568" class="btn btn-outline">Call Nigeria - +234 1 234 5678</a>
+        <a href="tel:+2341234568" class="btn btn-outline">Call Nigeria - +234 806 441 9641 </a>
         <a href="https://wa.me/447908487861" target="_blank" rel="noopener" class="btn btn-primary">WhatsApp an advisor</a>
         <a href="mailto:${BUSINESS_EMAIL}" class="btn btn-outline">Email hello@flourishkaytravel.com</a>
       </div>
